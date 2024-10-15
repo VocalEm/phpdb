@@ -1,0 +1,16 @@
+{
+  "name": "lenovo/phpdb",
+  "autoload": {
+    "psr-4": {
+      "Conexion\\": "conexion",
+      "App\\": "app"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jose Emiliano Frias Felix",
+      "email": "125625424+VocalEm@users.noreply.github.com"
+    }
+  ],
+  "require": {}
+}

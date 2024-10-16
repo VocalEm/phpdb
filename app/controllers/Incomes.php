@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace App\controllers;
+
+use Conexion\Conexion;
 
 class Incomes
 {
@@ -11,7 +13,18 @@ class Incomes
     public function create() {}
 
     //GUARDA UN RECURSO
-    public function store() {}
+    public function store($data)
+    {
+        $connection = Conexion::getInstance()->get_database_connection();
+        $connection->query("INSERT INTO incomes (payment_method, type, date, amount, description) 
+        VALUES(
+            {$data['payment_method']},
+            {$data['type']},
+            '{$data['date']}',
+            {$data['amount']},
+            '{$data['description']}'
+        );");
+    }
 
     //MUESTR UN SOLO RECURSO
     public function show() {}

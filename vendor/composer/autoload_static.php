@@ -11,12 +11,20 @@ class ComposerStaticInitb480c603ba986723e023350cc983eab2
         array (
             'Conexion\\' => 9,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Conexion\\' => 
         array (
             0 => __DIR__ . '/../..' . '/conexion',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
